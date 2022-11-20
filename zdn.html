@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pen</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .head-bg {
+            height: 814px;
+            background: url(images/demo1.jpg) no-repeat;
+            background-size: 100%;
+            position: relative;
+        }
+
+        .content {
+            width: 1200px;
+            height: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .text1 {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            margin-top: 24px;
+            font-size: 30px;
+            color: white;
+        }
+
+        .text2 {
+            margin-top: 180px;
+            color: gray;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        .logo {
+            height: 80px;
+            width: 240px;
+            background-color: #e8024d;
+        }
+
+        .img {
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+
+        .box2 {
+            padding-top: 40px;
+            background: #eae7e8;
+            height: 445px;
+        }
+
+        .box3 {
+            background-color: white;
+            height: 850px;
+            position: relative;
+        }
+
+        .box4 {
+            background-color: #eae7e8;
+            height: 398px;
+
+        }
+
+        .box1 {
+            margin-top: -412px;
+            height: 512px;
+            width: 1150px;
+            background-color: white;
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .text6 {
+            font-size: 20px;
+            margin: 40px 50px 40px 80px;
+            text-align: left;
+        }
+
+        .img2 {
+            width: 420px;
+            height: 100%;
+        }
+
+        .box- {
+            width: 365px;
+            height: 240px;
+            position: absolute;
+            background-color: #e8024d;
+            left: 120px;
+            top: 340px;
+            opacity: 0.65;
+        }
+
+        .play {
+            position: absolute;
+            margin-top: 70px;
+            margin-left: 150px;
+            width: 60px;
+            height: 60px;
+        }
+
+        .title {
+            text-align: center;
+            margin-top: 258px;
+            font-size: 50px;
+            position: absolute;
+            margin-left: 436px;
+        }
+
+        .sreirs-col {
+            width: 400px;
+            float: left;
+            color: black;
+            padding-top: 426px;
+            text-align: center;
+        }
+
+        .s-box {
+            height: 38px;
+            width: 90px;
+            position: absolute;
+            background-color: #e8024d;
+            margin-top: -30px;
+            margin-left: 40px;
+        }
+
+        .pic {
+            margin-top: 12px;
+            margin-left: 14px;
+        }
+
+        .button {
+            margin: 0 auto;
+            margin-top: 736px;
+            width: 240px;
+            height: 60px;
+            border-style: none;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding-top: 20px;
+            font-size: 30px;
+        }
+
+        .button1 {
+            margin: 0 auto;
+            margin-top: 80px;
+            width: 240px;
+            height: 60px;
+            border-style: none;
+            background-color: #4a3e42;
+            color: white;
+            text-align: center;
+            padding-top: 20px;
+            font-size: 30px;
+        }
+
+        .button2 {
+            margin: 0 auto;
+            margin-top: 65px;
+            margin-left: 390px;
+            width: 240px;
+            height: 60px;
+            border-style: none;
+            background-color: #eb2567;
+            color: white;
+            text-align: center;
+            padding-top: 20px;
+            font-size: 30px;
+        }
+
+        .box5 {
+            height: 348px;
+            background-color: rgb(170, 172, 173);
+            position: relative;
+        }
+
+        .box6 {
+            height: 1100px;
+            background-color: white;
+        }
+
+        .box7 {
+            height: 276px;
+            width: 816px;
+            background-color: white;
+            position: absolute;
+            margin-top: -180px;
+            margin-left: 182px;
+            box-shadow: 5px 5px 5px rgb(157, 153, 153);
+        }
+
+        .woman {
+            height: 70px;
+            width: 70px;
+            border-radius: 70px;
+            background-color: grey;
+            margin: 0 auto;
+            background: url(images/woman.png) no-repeat;
+            margin-top: 38px;
+        }
+
+        .say {
+            margin-top: 40px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .title1 {
+            text-align: center;
+            padding-top: 78px;
+            font-size: 30px;
+        }
+
+        .choice {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            margin-top: 30px;
+            margin-left: 326px;
+            height: 10px;
+            width: 188px;
+        }
+
+        .choice1 {
+            height: 10px;
+            width: 46px;
+            background-color: rgb(172, 165, 165);
+        }
+
+        .choice2 {
+            height: 10px;
+            width: 46px;
+            background-color: rgb(235, 230, 230);
+        }
+
+        .choice3 {
+            height: 10px;
+            width: 46px;
+            background-color: rgb(235, 230, 230);
+        }
+
+        .text7 {
+            margin-top: 120px;
+            position: absolute;
+            margin-left: 300px;
+            font-size: 30px;
+        }
+
+        .box14 {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: row;
+            margin-top: 278px;
+            justify-content: space-between;
+        }
+
+        .box15 {
+            display: flex;
+            align-items: flex-end;
+            flex-direction: row;
+            margin-top: -120px;
+            justify-content: space-between;
+        }
+
+        .box8 {
+            height: 342px;
+            background-color: rgb(86, 84, 89);
+            position: relative;
+        }
+
+        .box9 {
+            height: 316px;
+            background-color: white;
+        }
+
+        .box10 {
+            height: 438px;
+            width: 880px;
+            background-color: white;
+            position: absolute;
+            margin-top: -250px;
+            margin-left: 90px;
+            box-shadow: 5px 5px 5px rgb(157, 153, 153);
+        }
+
+        .box11 {
+            height: 121px;
+            width: 841px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            margin-top: 10px;
+        }
+
+        .box12 {
+            margin-top: 10px;
+            height: 121px;
+            width: 841px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+        }
+
+        .box13 {
+            margin-top: 10px;
+            height: 121px;
+            width: 841px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+        }
+
+        .bottom {
+            height: 980px;
+            background: url(images/demo14.jpg) no-repeat;
+            background-size: 100%;
+            position: relative;
+        }
+
+        .text3 {
+            position: relative;
+            color: black;
+            font-size: 30px;
+        }
+
+        .text5 {
+            position: relative;
+            color: black;
+            font-size: 30px;
+        }
+
+        .text8 {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            height: 134px;
+            width: 800px;
+            margin: 0 auto;
+            position: relative;
+            margin-top: 200px;
+        }
+
+        .box {
+            line-height: 30px;
+            background-color: #535353;
+            text-align: center;
+            color: white;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head-bg">
+        <div class="content">
+            <div class="text1">
+                <div>推荐</div>
+                <div>在线购买产品</div>
+                <div class="logo">
+                    <div class="img"><img src="images/logo.png"></div>
+                </div>
+                <div>企业礼包</div>
+                <div>品牌介绍</div>
+            </div>
+            <div class="text2">
+                <div>The <b> BEST </b> pen is</br> &nbsp &nbsp &nbsp just <b> LAMY </b></div>
+            </div>
+        </div>
+    </div>
+    <div class="series">
+        <div class="box2"></div>
+        <div class="box3">
+            <div class="content">
+                <div class="box1">
+                    <div class="img2"><img src="images/demo2.jpg"></div>
+                    <div class="text6">
+                        <h1><b>Welcome to LAMY</b></br></br></h1>
+                        <p>德国书写工具品牌LAMY始创人C•JosefLamy于1930年在海德</br>
+                            堡创立了欧瑟斯墨水笔制造厂。1952年，崭露头角的LAMY流线</br>
+                            型墨水笔，震撼问世,彰显公司的创新敏锐触觉。1966年终于打</br></br></br>
+                            造出令人耳目一新的现代经典之作-LAMY2000系列。产品撮合</br>
+                            了聚碳酸酯与不锈钢材质，绝妙的配搭，使之从芸芸众生的书写</br>
+                            工具中脱颖而出，时至今日，依然在市场具有影响力。</p>
+                        </p>
+                    </div>
+                    <div class="video">
+                        <div class="box-">
+                            <div class="play"><img src="images/play.png"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="title">
+                    <strong>LAMY各系列</strong>
+                </div>
+                <div class=" sreirs-col">
+                    <p>
+                        【恒星系列 墨水笔 】<br /><br />
+                        LAMY 恒星系列延续了 LAMY <br />
+                        的时尚造型，打造出锦上添花的极致品质 <br />
+                        。此系列全部均由氧化 <br />
+                        独特的凹陷式笔握以及弹性铜线笔夹 <br />
+                        富的颜色让 LAMY 恒星系列突破了传统 <br />
+                        散发着无限的青春魅力。 <br />
+                    </p>
+                </div>
+                <div class="sreirs-col">
+                    <p>
+                        【狩猎系列限量色墨水笔 】<br /><br />
+                        色彩丰富，颜色亮丽，不仅是可以作为书 <br />
+                        写工具，同样是很好的装饰品 <br />
+                        宽大的笔夹设计，可随时夹在包带、牛仔裤、 <br />
+                        T恤袖口上，让您感受创意方便的携带方式 <br />
+                        笔身通体材质采用车用强力ABS材料<br />
+                    </p>
+                </div>
+                <div class=" sreirs-col">
+                    <p>
+                        【狩猎系列限量色墨水笔 】<br /><br />
+                        色彩丰富，颜色亮丽，不仅是可以作为书 <br />
+                        写工具，同样是很好的装饰品 <br />
+                        宽大的笔夹设计，可随时夹在包带、牛仔裤、 <br />
+                        T恤袖口上，让您感受创意方便的携带方式 <br />
+                        笔身通体材质采用车用强力ABS材料<br />
+                    </p>
+                </div>
+                <div class="button">了解详情 &nbsp &nbsp》</div>
+            </div>
+        </div>
+        <div class="box4">
+            <div class="pic">
+                <div class="content">
+                    <div class="pic1"><img src="images/demo3.jpg">
+                        <div class="s-box">
+                            <div class="pic"><img src="images/logo3.png"></div>
+                        </div>
+                    </div>
+                    <div class="pic2"><img src="images/demo4.jpg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="saying">
+        <div class="box5">
+            <div class="content">
+                <div class="title1">
+                    <p>From Germany</p>
+                    <p>What people are saying?</p>
+                </div>
+            </div>
+        </div>
+        <div class="box6">
+            <div class="content">
+                <div class="box7">
+                    <div class="woman"></div>
+                    <div class="say">
+                        <p>
+                            使用令人难以置信的生产技术和坚持极高水平的精准要求，仅使用一种</br>
+                            材质，也足以成就出这款永恒的设计。产品本身是体现不同加工程序和</br>
+                            制造工艺。手工打磨的亚光拉丝表面充分体现了品牌对细节的注重。
+                        </p>
+                    </div>
+                    <div class="choice">
+                        <div class="choice1"></div>
+                        <div class="choice2"></div>
+                        <div class="choice3"></div>
+                    </div>
+                    <div class="text7">
+                        <p> &nbsp &nbsp Choose</p>
+                        <p>Our products</p>
+                    </div>
+                    <div class="box14">
+                        <img src="images/demo5.jpg">
+                        <img src="images/demo7.jpg">
+                        <img src="images/demo9.jpg">
+                    </div>
+                    <box class="box15">
+                        <img src="images/demo6.jpg">
+                        <img src="images/demo8.jpg">
+                        <img src="images/demo10.jpg">
+                    </box>
+                    <div class="button1">戳我速购 &nbsp &nbsp》</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="showing">
+        <div class="box8"></div>
+        <div class="box9">
+            <div class="content">
+                <div class="box10">
+                    <div class="box11">
+                        <img src="images/demo11.jpg">
+                        <p></br></br>
+                            You make millions of decisions that is</br>
+                            mean nothing , and then one day your</br>
+                            order takes out life.
+                        </p>
+                    </div>
+                    <div class="box12">
+                        <img src="images/demo12.jpg">
+                        <p></br></br>
+                            It ' s sad when you realize you aren ' t</br>
+                            is as important to someone as you </br>
+                            thought you were .
+                        </p>
+                    </div>
+                    <div class="box13">
+                        <img src="images/demo13 .jpg">
+                        <p></br></br>
+                            Love is unequal , so don't count how</br>
+                            much one contributes , and which is </br>
+                            more active .
+                        </p>
+                    </div>
+                    <div class="button2">新品推荐 &nbsp &nbsp》</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="content">
+            <div class="text8">
+                <div class="text3">
+                    <div>CUTE</div>
+                    <div>useful</div>
+                </div>
+                <div class="text4"><img src="images/logo2.png"></div>
+                <div class="text5">
+                    <div>GOOD</div>
+                    <div>SIMPLE</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box">© 凌美中国 2015 版权所有 不得转载</div>
+</body>
+
+</html>
